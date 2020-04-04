@@ -1,0 +1,9 @@
+all: u64aap
+
+OBJS = u64aap.c gopt.c
+
+usb2snes: $(OBJS)
+	gcc -static $(OBJS) -Wall -Wextra -o2 -o u64aap
+
+clean:
+	rm u64aap.exe
